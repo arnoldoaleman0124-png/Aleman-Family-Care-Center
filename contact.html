@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Aleman Family Care Center</title>
+<meta name="description" content="Contact Aleman Family Care Center. Address, hours, phone, and online appointment request." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <div class="utility-info">
+      <span>Mon–Fri 8:00am – 5:00pm</span>
+      <span>Same-day appointments available</span>
+      <span>Se habla español</span>
+    </div>
+    <div><a href="tel:+10000000000">📞 (000) 000-0000</a></div>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      <span>
+        <span class="brand-name">Aleman Family Care Center</span>
+        <span class="brand-sub">Family Medicine · Whole-Person Care</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="providers.html">Providers</a></li>
+        <li><a href="patients.html">Patient Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html#schedule" class="btn btn-primary nav-cta">Book Visit <span class="arrow">→</span></a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+    <h1>Get in Touch</h1>
+    <p>Call us, message us, or stop by. We're always happy to help.</p>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <div class="info-card">
+          <h3>Visit Us</h3>
+          <p>
+            <strong>Aleman Family Care Center</strong><br/>
+            3529 W National Ave<br/>
+            Milwaukee, WI 53215
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Call or Email</h3>
+          <p>
+            Phone: <a href="tel:+10000000000"><strong>(000) 000-0000</strong></a><br/>
+            Fax: (000) 000-0001<br/>
+            Email: <a href="mailto:hello@alemanfamilymed.com">hello@alemanfamilymed.com</a>
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Office Hours</h3>
+          <table class="hours-table">
+            <tr><td>Monday</td><td>8:00am – 5:00pm</td></tr>
+            <tr><td>Tuesday</td><td>8:00am – 5:00pm</td></tr>
+            <tr><td>Wednesday</td><td>8:00am – 5:00pm</td></tr>
+            <tr><td>Thursday</td><td>8:00am – 5:00pm</td></tr>
+            <tr><td>Friday</td><td>8:00am – 4:00pm</td></tr>
+            <tr><td>Saturday</td><td>Closed</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+
+        <p class="placeholder-note" style="color:var(--grey-500); margin-top:20px;">
+          Update address, phone, fax, email, and hours with your actual practice details.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="form-card">
+          <h2 style="margin-bottom:8px;">Request an Appointment</h2>
+          <p style="margin-bottom:24px;">Fill out the form below and our team will reach out within one business day to confirm a time.</p>
+
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="field">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" type="text" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="patient-type">Patient Type</label>
+                <select id="patient-type" name="patient-type" required>
+                  <option value="">Select…</option>
+                  <option>New patient</option>
+                  <option>Established patient</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="reason">Reason for Visit</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Select…</option>
+                  <option>Annual physical / wellness</option>
+                  <option>Sick visit</option>
+                  <option>Chronic condition follow-up</option>
+                  <option>Women's health</option>
+                  <option>Pediatric visit</option>
+                  <option>Behavioral health</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Additional Details (optional)</label>
+              <textarea id="message" name="message" placeholder="Tell us anything that would help us prepare for your visit…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              Send Request <span class="arrow">→</span>
+            </button>
+
+            <p class="form-note" id="form-status">
+              For urgent or after-hours medical concerns, please call <a href="tel:+10000000000">(000) 000-0000</a> or dial 911 for emergencies.
+            </p>
+          </form>
+
+          <p class="placeholder-note" style="color:var(--grey-500); margin-top:20px;">
+            This form is a front-end demo. Wire it up to your scheduling platform, email service, or a form provider like Formspree, Tally, or your EHR's online booking widget.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2>Conveniently located in Milwaukee.</h2>
+      <p>Free patient parking on-site. Easily accessible from major roads.</p>
+    </div>
+    <div class="map-placeholder reveal">
+      <div>
+        Embedded Google Map goes here
+        <div class="placeholder-note" style="color:var(--grey-700);">
+          Replace this div with a Google Maps embed iframe for your address
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand-mark">A</span>
+          <span>
+            <span class="brand-name">Aleman Family Care Center</span>
+            <span class="brand-sub">Family Medicine</span>
+          </span>
+        </a>
+        <p style="margin-top:14px; max-width:320px;">Personalized, evidence-based family medicine for every generation. We're honored to be your medical home.</p>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="providers.html">Our Providers</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="patients.html">Patient Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <ul>
+          <li>3529 W National Ave</li>
+          <li>Milwaukee, WI 53215</li>
+          <li>Mon–Fri 8am – 5pm</li>
+          <li>Closed weekends</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+          <li><a href="mailto:hello@alemanfamilymed.com">hello@alemanfamilymed.com</a></li>
+          <li><a href="contact.html#schedule">Book an appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year">2026</span> Aleman Family Care Center. All rights reserved.</div>
+      <div>Designed with care for the families we serve.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
