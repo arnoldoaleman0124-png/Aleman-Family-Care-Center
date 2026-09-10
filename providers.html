@@ -4,11 +4,109 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Providers — Aleman Family Care Center</title>
-<meta name="description" content="Meet the experienced, board-certified providers of Aleman Family Care Center." />
+<meta name="description" content="Meet Dr. Daniela Aleman, MD and Alvaro Alexander Aleman, RN — the co-founders of Aleman Family Care Center in Milwaukee, WI." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css" />
+<style>
+  /* ── Provider feature sections ─────────────────────────────── */
+  .provider-feature {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    min-height: 660px;
+  }
+  .provider-feature--flip {
+    grid-template-columns: 56% 44%;
+  }
+  .provider-feature--flip .pf-photo { order: 2; }
+  .provider-feature--flip .pf-bio   { order: 1; }
+
+  .pf-photo {
+    position: relative;
+    overflow: hidden;
+    background: var(--sage-100);
+  }
+  .pf-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  .pf-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 80px;
+    background: var(--white);
+  }
+  .provider-feature--flip .pf-bio {
+    background: var(--sage-100);
+  }
+
+  .pf-bio .eyebrow { margin-bottom: 12px; }
+
+  .pf-bio h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 600;
+    color: var(--forest-900);
+    line-height: 1.15;
+    margin: 0 0 6px;
+  }
+
+  .pf-role {
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--forest-600, var(--forest-700));
+    margin-bottom: 28px;
+    display: block;
+  }
+
+  .pf-bio p {
+    font-size: .96rem;
+    color: var(--grey-700);
+    line-height: 1.78;
+    margin-bottom: .85rem;
+    max-width: 560px;
+  }
+
+  .pf-bio .credentials {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .pf-bio .btn {
+    align-self: flex-start;
+  }
+
+  /* divider between providers */
+  .provider-divider {
+    height: 1px;
+    background: var(--grey-200);
+  }
+
+  /* mobile */
+  @media (max-width: 768px) {
+    .provider-feature,
+    .provider-feature--flip {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+    .provider-feature--flip .pf-photo { order: 0; }
+    .provider-feature--flip .pf-bio   { order: 1; }
+    .pf-photo { min-height: 380px; }
+    .pf-bio { padding: 48px 24px; }
+    .pf-bio h2 { font-size: 1.8rem; }
+    .provider-feature--flip .pf-bio { background: var(--white); }
+  }
+</style>
 </head>
 <body>
 
@@ -51,106 +149,107 @@
   <div class="container">
     <div class="breadcrumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Providers</div>
     <h1>Meet Our Providers</h1>
-    <p>Experienced, board-certified clinicians who treat every patient like family.</p>
+    <p>The people behind Aleman Family Care Center — here to know you, not just treat you.</p>
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="providers">
+<!-- ── Dr. Daniela Aleman ─────────────────────────────────────── -->
+<div class="provider-feature reveal">
+  <div class="pf-photo">
+    <img src="Dr-Daniela-Aleman.png" alt="Dr. Daniela Aleman, MD — Family Medicine Physician">
+  </div>
+  <div class="pf-bio">
+    <span class="eyebrow">Family Medicine · Co-Founder</span>
+    <h2>Dr. Daniela<br>Aleman, MD</h2>
+    <span class="pf-role">Board-Certified Family Physician</span>
 
-      <div class="provider-card reveal">
-        <div class="provider-photo">
-          <img src="Dr-Daniela-Aleman.png" alt="Dr. Daniela Aleman, MD">
-        </div>
-        <div class="provider-body">
-          <h3>Dr. Daniela Aleman, MD</h3>
-          <span class="provider-role">Co-Founder · Family Medicine Physician</span>
-          <p>
-            Born and raised in Tampico, Tamaulipas in northeastern Mexico, Dr. Daniela Aleman
-            was drawn to medicine by a lifelong belief that the best care begins with knowing
-            the person, not just the patient.
-          </p>
-          <p>
-            She earned her medical degree from Universidad de Monterrey (UDEM) in Nuevo León
-            and spent formative years as a general practitioner for a small rural community in
-            Mexico—an experience that grounded her in the art of traditional clinical medicine
-            and whole-person care. She relocated to Wisconsin in 2016 and completed her family
-            medicine residency at Presence St. Mary and Elizabeth Medical Center in Chicago's
-            Ukrainian Village, where she served as Chief Resident during the height of the
-            COVID-19 pandemic. That chapter tested her leadership and sharpened her resolve
-            in ways that continue to shape how she practices today.
-          </p>
-          <p>
-            After returning to Wisconsin, Dr. Aleman spent six years as a faculty physician
-            at Froedtert West Bend Health Center and Hospital. In 2026, she made the
-            decision to leave academic medicine and embrace her true calling: community
-            medicine. She co-founded Aleman Family Care Center alongside her husband Alvaro
-            to build the practice she always envisioned—one where patients come first, visits
-            aren't rushed, and a doctor truly knows your story.
-          </p>
-          <p>
-            Her clinical interests include women's health, menopause care and hormone
-            replacement therapy, preventive medicine, chronic disease management,
-            comprehensive physical and preoperative evaluations, and pediatric care. She is
-            a member of the American Academy of Family Physicians (AAFP) and
-            The Menopause Society. Outside the office, she enjoys working on her home,
-            traveling, and most of all, spending time with her three children.
-          </p>
-          <div class="credentials">
-            <span>Board Certified</span>
-            <span>Family Medicine</span>
-            <span>AAFP Member</span>
-            <span>The Menopause Society</span>
-            <span>Bilingual EN/ES</span>
-            <span>Co-Founder</span>
-          </div>
-        </div>
-      </div>
+    <p>
+      Born and raised in Tampico, Tamaulipas in northeastern Mexico, Dr. Daniela Aleman
+      was drawn to medicine by a lifelong belief that the best care begins with knowing
+      the person, not just the patient.
+    </p>
+    <p>
+      She earned her medical degree from Universidad de Monterrey (UDEM) and spent formative
+      years as a general practitioner for a small rural community in Mexico — an experience
+      that grounded her in the art of traditional, whole-person clinical medicine. She relocated
+      to Wisconsin in 2016 and completed her family medicine residency at Presence St. Mary and
+      Elizabeth Medical Center in Chicago's Ukrainian Village, serving as Chief Resident during
+      the COVID-19 pandemic.
+    </p>
+    <p>
+      After six years as a faculty physician at Froedtert West Bend Health Center and Hospital,
+      she made the decision to leave academic medicine and build the practice she always
+      envisioned — one where patients come first, visits aren't rushed, and a doctor truly
+      knows your story. She is a member of the American Academy of Family Physicians (AAFP)
+      and The Menopause Society.
+    </p>
+    <p style="font-size:.9rem; color:var(--grey-500); font-style:italic;">
+      Clinical focus: Women's health · Menopause &amp; HRT · Preventive medicine ·
+      Chronic disease · Pediatric care
+    </p>
 
-      <div class="provider-card reveal">
-        <div class="provider-photo">
-          <img src="Alvaro-Aleman.png" alt="Alvaro Alexander Aleman, RN">
-        </div>
-        <div class="provider-body">
-          <h3>Alvaro Alexander Aleman, RN</h3>
-          <span class="provider-role">Co-Founder · Practice Administrator</span>
-          <p>
-            Alvaro Alexander Aleman is the co-founder and practice administrator of Aleman
-            Family Care Center, and the driving operational force behind the practice's
-            day-to-day experience. A registered nurse and graduate of Bryant &amp; Stratton
-            College, he brings both clinical understanding and a warm, patient-centered
-            approach to everything he does.
-          </p>
-          <p>
-            Alvaro holds a medical background from Universidad de Monterrey (UDEM) in Mexico,
-            where he and Dr. Daniela Aleman first began their shared path in healthcare. He is
-            currently pursuing a Master of Science in Nursing at Concordia University Wisconsin
-            on his way to becoming a Nurse Practitioner—a next step that reflects his lifelong
-            commitment to growing as a clinician and serving his community.
-          </p>
-          <p>
-            As co-founder, Alvaro oversees patient experience, care coordination, and the
-            culture that makes Aleman Family Care Center feel like a true medical home. He is
-            bilingual in English and Spanish and is dedicated to ensuring that every patient—
-            from every background—feels respected, welcomed, and heard from the moment they
-            walk through the door.
-          </p>
-          <div class="credentials">
-            <span>Registered Nurse</span>
-            <span>Practice Operations</span>
-            <span>Co-Founder</span>
-            <span>Bilingual EN/ES</span>
-          </div>
-        </div>
-      </div>
-
+    <div class="credentials">
+      <span>Board Certified</span>
+      <span>Family Medicine</span>
+      <span>AAFP Member</span>
+      <span>The Menopause Society</span>
+      <span>Bilingual EN/ES</span>
+      <span>Co-Founder</span>
     </div>
 
+    <a href="contact.html#schedule" class="btn btn-primary">
+      Book with Dr. Aleman <span class="arrow">→</span>
+    </a>
   </div>
-</section>
+</div>
 
-<section class="section-alt">
+<div class="provider-divider"></div>
+
+<!-- ── Alvaro Alexander Aleman ───────────────────────────────── -->
+<div class="provider-feature provider-feature--flip reveal">
+  <div class="pf-photo">
+    <img src="Alvaro-Aleman.png" alt="Alvaro Alexander Aleman, RN — Practice Administrator">
+  </div>
+  <div class="pf-bio">
+    <span class="eyebrow">Practice Administration · Co-Founder</span>
+    <h2>Alvaro Alexander<br>Aleman, RN</h2>
+    <span class="pf-role">Registered Nurse · Practice Administrator</span>
+
+    <p>
+      Alvaro Alexander Aleman is the co-founder and practice administrator of Aleman Family
+      Care Center — the driving operational force behind every patient's experience from the
+      moment they walk through the door.
+    </p>
+    <p>
+      Alvaro holds a medical background from Universidad de Monterrey (UDEM) in Mexico, where
+      he and Dr. Daniela Aleman first began their shared path in healthcare. He completed his
+      nursing degree at Bryant &amp; Stratton College and is currently pursuing a Master of
+      Science in Nursing at Concordia University Wisconsin on his way to becoming a Nurse
+      Practitioner.
+    </p>
+    <p>
+      As co-founder, Alvaro oversees patient experience, care coordination, and the culture
+      that makes Aleman Family Care Center feel like a true medical home. He is bilingual in
+      English and Spanish and is committed to ensuring that every patient — from every
+      background — feels respected, welcomed, and heard.
+    </p>
+
+    <div class="credentials">
+      <span>Registered Nurse</span>
+      <span>Practice Operations</span>
+      <span>MSN Candidate</span>
+      <span>Co-Founder</span>
+      <span>Bilingual EN/ES</span>
+    </div>
+
+    <a href="contact.html" class="btn btn-outline">
+      Get in Touch <span class="arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- ── Our Approach ───────────────────────────────────────────── -->
+<section class="section-alt" style="margin-top:0;">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Our Approach</span>
@@ -163,7 +262,7 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
         </div>
         <h3>We Listen First</h3>
-        <p>Your story matters. Every appointment starts with us listening to what's actually going on—not jumping straight to a chart.</p>
+        <p>Your story matters. Every appointment starts with us listening to what's actually going on — not jumping straight to a chart.</p>
       </div>
       <div class="value-card reveal">
         <div class="value-icon" aria-hidden="true">
@@ -184,7 +283,7 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
         <h3>Always Reachable</h3>
-        <p>Secure messaging, phone access, and real human responses—because care doesn't stop at the office door.</p>
+        <p>Phone access and real human responses — because care doesn't stop at the office door.</p>
       </div>
     </div>
   </div>
@@ -235,8 +334,6 @@
           <li>Mon–Thu 9:00am – 5:00pm</li>
           <li>Fri 9:00am – 4:00pm</li>
           <li>Closed weekends</li>
-          
-          
         </ul>
       </div>
       <div>
