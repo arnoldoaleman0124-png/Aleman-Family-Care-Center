@@ -323,14 +323,7 @@ p  { margin: 0 0 1em; color: var(--grey-700); }
   background: linear-gradient(135deg, var(--forest-700), var(--forest-900));
   box-shadow: var(--shadow-lg);
 }
-.hero-visual::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: rgba(255,252,245,.22);
-  mix-blend-mode: multiply;
-  z-index: 1;
-  pointer-events: none;
-}
+.hero-visual::before { display: none; }
 .hero-visual .placeholder-label {
   position: absolute;
   inset: 0;
