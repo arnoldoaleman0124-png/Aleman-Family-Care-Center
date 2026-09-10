@@ -13,28 +13,30 @@
   /* ── Provider feature sections ─────────────────────────────── */
   .provider-feature {
     display: grid;
-    grid-template-columns: 44% 56%;
-    min-height: 660px;
+    grid-template-columns: 42% 58%;
+    min-height: 580px;
   }
   .provider-feature--flip {
-    grid-template-columns: 56% 44%;
+    grid-template-columns: 58% 42%;
   }
   .provider-feature--flip .pf-photo { order: 2; }
   .provider-feature--flip .pf-bio   { order: 1; }
 
   .pf-photo {
-    position: relative;
-    overflow: hidden;
     background: var(--sage-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 32px;
   }
   .pf-photo img {
-    position: absolute;
-    inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top center;
+    max-height: 520px;
+    object-fit: contain;
+    object-position: center;
     display: block;
+    border-radius: 8px;
   }
 
   .pf-bio {
@@ -101,7 +103,8 @@
     }
     .provider-feature--flip .pf-photo { order: 0; }
     .provider-feature--flip .pf-bio   { order: 1; }
-    .pf-photo { min-height: 380px; }
+    .pf-photo { padding: 32px 24px; min-height: 320px; }
+    .pf-photo img { max-height: 340px; }
     .pf-bio { padding: 48px 24px; }
     .pf-bio h2 { font-size: 1.8rem; }
     .provider-feature--flip .pf-bio { background: var(--white); }
