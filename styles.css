@@ -544,9 +544,9 @@ section { padding: 96px 0; }
 
 /* ---------- Provider cards ---------- */
 .providers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .provider-card {
   background: var(--white);
@@ -554,15 +554,22 @@ section { padding: 96px 0; }
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--grey-200);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 480px;
 }
 .provider-photo {
   background: var(--sage-100);
   position: relative;
-  height: 360px;
-  flex-shrink: 0;
   overflow: hidden;
+}
+.provider-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 .provider-photo .placeholder-label {
   position: absolute; inset: 0;
@@ -1029,8 +1036,9 @@ section { padding: 96px 0; }
   .services-grid { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; gap: 40px; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 32px; }
-  .providers { grid-template-columns: 1fr; }
-  .provider-photo { height: 280px; }
+  .provider-card { grid-template-columns: 1fr; }
+  .provider-photo { height: 300px; }
+  .provider-photo img { position: relative; inset: auto; width: 100%; height: 100%; }
   .testimonials { grid-template-columns: 1fr; }
   .cta-banner { grid-template-columns: 1fr; padding: 44px 32px; }
   .cta-actions { justify-content: flex-start; }
