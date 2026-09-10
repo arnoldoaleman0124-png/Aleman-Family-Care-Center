@@ -326,12 +326,10 @@ p  { margin: 0 0 1em; color: var(--grey-700); }
 .hero-visual::before {
   content: "";
   position: absolute; inset: 0;
-  background: rgba(0,0,0,.18);
+  background: rgba(255,252,245,.22);
+  mix-blend-mode: multiply;
   z-index: 1;
   pointer-events: none;
-}
-.hero-visual img {
-  filter: brightness(.88) saturate(.92);
 }
 .hero-visual .placeholder-label {
   position: absolute;
@@ -488,9 +486,6 @@ section { padding: 96px 0; }
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
-}
-.split-image img {
-  filter: brightness(.86) saturate(.9);
 }
 .split-image .placeholder-label {
   position: absolute; inset: 0;
