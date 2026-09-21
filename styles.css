@@ -655,6 +655,24 @@ section { padding: 96px 0; }
 }
 
 /* ---------- Insurance strip ---------- */
+.insurance-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+.insurance-chip {
+  background: var(--sage-100);
+  border: 1.5px solid var(--sage-200);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-weight: 600;
+  font-size: .84rem;
+  color: var(--forest-900);
+  white-space: nowrap;
+  letter-spacing: .01em;
+}
 .insurance-strip {
   display: flex;
   flex-wrap: wrap;
